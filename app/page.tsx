@@ -1,6 +1,6 @@
-import LoginMain from './admin/LoginMain/LoginMain'
+import UserLogin from './user/UserLogin'
 
 export default function Page() {
-  return <LoginMain />
+  return <UserLogin />
 }
 

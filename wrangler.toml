@@ -1,18 +1,12 @@
-# Cloudflare Workers configuration
+# Cloudflare Pages configuration
 name = "kenergysaveadmin"
-main = "worker.js"
 compatibility_date = "2024-12-01"
-compatibility_flags = ["nodejs_compat"]
 
-# Assets configuration
-assets = { directory = ".next/static", binding = "ASSETS" }
-
-# Observability
-[observability]
-enabled = true
+# Build command: npm run build
+# Output directory: .next
 
 # Environment variables
-[vars]
+[env.production.vars]
 INFLUX_HOST = "http://127.0.0.1:8086"
 INFLUX_ORG = "K-Energy_Save"
 INFLUX_BUCKET = "k_db"
